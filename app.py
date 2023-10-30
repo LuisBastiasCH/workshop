@@ -14,8 +14,7 @@ images = [
     "https://media.giphy.com/media/NAcNfRrU6f2bC/giphy.gif",
     "https://media.giphy.com/media/ktcUyw6mBlMVa/giphy.gif",
     "https://media.giphy.com/media/13rQ7rrTrvZXlm/giph.gif",
-    "https://media.giphy.com/media/o7OChVtT1oqmk/giphy.gif",
-    "https://media.giphy.com/media/NzQSHl01OBLkk/giphy.gif"
+    "https://media.giphy.com/media/o7OChVtT1oqmk/giphy.gif"
 ]
 
 @app.route('/')
