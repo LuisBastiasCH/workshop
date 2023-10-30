@@ -8,13 +8,7 @@ hostname = socket.gethostname()
 
 # list of images:
 images = [
-    "https://media.giphy.com/media/BemKqR9RDK4V2/giphy.gif",
-    "https://media.giphy.com/media/ZebTmyvw85gnm/giphy.gif",
-    "https://media.giphy.com/media/4no7ul3pa571e/giphy.gif",
-    "https://media.giphy.com/media/ktcUyw6mBlMVa/giphy.gif",
-    "https://media.giphy.com/media/NmerZ36iBkmKk/giphy.gif",
-    "https://media.giphy.com/media/o7OChVtT1oqmk/giphy.gif",
-    "https://media.giphy.com/media/NzQSHl01OBLkk/giphy.gif"
+    "https://media.giphy.com/media/lQDdDwdZpfYRn1MsJy/giphy.gif"
 ]
 
 @app.route('/')
