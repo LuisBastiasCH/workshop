@@ -3,30 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página AWS-like</title>
+    <title>WorkShop DevOps</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #FFFFFF; /* Fondo blanco */
+            color: #232F3E; /* Color de texto principal de AWS */
             margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
 
         .header {
             background-color: #232F3E;
             color: #FFFFFF;
             padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+            text-align: center;
         }
 
         .aws-logo {
@@ -35,45 +25,48 @@
             margin-right: 10px;
         }
 
-        .content {
+        .section {
+            max-width: 800px;
+            text-align: center;
+            margin: 20px auto;
             padding: 20px;
-            text-align: left;
-        }
-
-        .service {
-            margin-bottom: 40px;
-        }
-
-        .service img {
-            max-width: 100%;
-            height: auto;
+            background-color: #F8F9FA; /* Fondo de las secciones */
         }
 
         h1 {
-            margin: 0;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
             font-size: 24px;
-            text-align: center; /* Añade esta línea para centrar el texto */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img class="aws-logo" src="https://www.cyberark.com/wp-content/uploads/2022/01/aws-partner-interior-hero.jpeg" alt="Logo AWS">
-            <h1>Bienvenido al mundo Devops</h1>
-        </div>
-        <div class="content">
-            <div class="service">
-                <h2>AWS CodePipeline</h2>
-                <p>CodePipeline es un servicio de entrega continua y automatización de lanzamientos de software que ayuda a liberar cambios rápidamente.</p>
-                <img src="https://d1.awsstatic.com/products/codepipeline/Product-Page-Diagram_AWS-CodePipeline.4a1bea38d3c8d3b2c1384dd0a7d2a858f4350471.jpg" alt="CodePipeline">
-            </div>
-            <div class="service">
-                <h2>AWS CodeDeploy</h2>
-                <p>CodeDeploy es un servicio de implementación completamente administrado que automatiza implementaciones de aplicaciones en cualquier instancia EC2 o servidor local.</p>
-                <img src="https://d1.awsstatic.com/products/CodeDeploy/Product-Page-Diagram_AWS-CodeDeploy.13cf5eb5c113ea98cc659974b52896f8f0adfb43.png" alt="CodeDeploy">
-            </div>
-        </div>
+    <div class="header">
+        <h1>WORKSHOP DEVOPS</h1>
+    </div>
+    <div class="section">
+        <h2>AWS CodePipeline</h2>
+        <p>CodePipeline es un servicio de entrega continua y automatización de lanzamientos de software que ayuda a liberar cambios rápidamente.</p>
+        <img src="https://d1.awsstatic.com/products/codepipeline/Product-Page-Diagram_AWS-CodePipeline.4a1bea38d3c8d3b2c1384dd0a7d2a858f4350471.jpg" alt="CodePipeline">
+    </div>
+    <div class="section">
+        <h2>AWS CodeDeploy</h2>
+        <p>CodeDeploy es un servicio de implementación completamente administrado que automatiza implementaciones de aplicaciones en cualquier instancia EC2 o servidor local.</p>
+        <img src="https://d1.awsstatic.com/products/CodeDeploy/Product-Page-Diagram_AWS-CodeDeploy.13cf5eb5c113ea98cc659974b52896f8f0adfb43.png" alt="CodeDeploy">
     </div>
 </body>
 </html>
