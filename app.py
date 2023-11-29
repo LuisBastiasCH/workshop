@@ -16,14 +16,14 @@ def index():
 def status():
     code = urllib.request.urlopen("http://127.0.0.1:8082").getcode()
     if code == 200:
-        return jsonify(status="OK", version="4.0")
+        return jsonify(status="OK", version="5.0")
     else:
-        return jsonify(status="ERROR", version="4.0")
+        return jsonify(status="ERROR", version="5.0")
 
 @app.route('/version')
 def version():
     return jsonify(
-        version = "4.0",
+        version = "5.0",
         hostname = hostname,
         StatusCode = 200
         )
