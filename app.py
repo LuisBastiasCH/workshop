@@ -31,13 +31,13 @@ def index():
 def status():
     code = urllib.request.urlopen("http://127.0.0.1:8082").getcode()
     if code == 200:
-        return jsonify(status="OK", version="2.0")
+        return jsonify(status="OK", version="2.1")
     else:
-        return jsonify(status="ERROR", version="2.0")
+        return jsonify(status="ERROR", version="2.1")
 
 @app.route('/version')
 def version():
-    return jsonify(version="2.0")
+    return jsonify(version="2.1")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8082)
