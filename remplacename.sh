@@ -3,6 +3,7 @@
 # Clonar el repositorio desde GitHub
 git clone https://github.com/LuisBastiasCH/workshop.git
 cd workshop  # Entrar al directorio clonado
+cd templates
 
 # Modificar el archivo HTML usando sed
 sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
@@ -13,7 +14,7 @@ sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
         <p>Author: Hermes Vargas</p>\
         <p>Version: 2.0.0</p>\
         <p><a href="/status">Check server status</a></p>\
-    </div>|' templates/index.html
+    </div>|'index.html
 
 echo "Archivo HTML modificado exitosamente"
 
@@ -22,7 +23,7 @@ git config user.email "luis.bastias@cloudhesive.com"
 git config user.name "LuisBastiasCH"
 
 # Añadir cambios, hacer commit y push
-git add templates/index.html
+git add index.html
 git commit -m "Modificación automática del archivo HTML"
 git push origin main
 
