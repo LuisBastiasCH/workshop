@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL del archivo HTML en GitHub
-github_html_url="https://raw.githubusercontent.com/tu_usuario/tu_repositorio/ruta/al/archivo/index.html"
+github_html_url="https://raw.githubusercontent.com/LuisBastiasCH/workshop/main/remplacename.sh"
 
 # Descargar el archivo HTML desde GitHub
 curl -sSL "$github_html_url" -o index.html
