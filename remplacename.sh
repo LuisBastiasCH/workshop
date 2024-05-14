@@ -7,7 +7,7 @@ github_html_url="https://raw.githubusercontent.com/tu_usuario/tu_repositorio/rut
 curl -sSL "$github_html_url" -o index.html
 
 # Modificar el archivo HTML usando sed
-sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">
+sed 's|<div id="container">Contenido anterior</div>|<div class="container">
         <h2>Random GIF</h2>
         <img src="{{url}}" alt="Random GIF" />
         <h4>This app is running on:</h4>
