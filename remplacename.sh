@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# URL del archivo HTML en GitHub
-github_html_url="https://raw.githubusercontent.com/LuisBastiasCH/workshop/main/templates/index.html"
-
-# Descargar el archivo HTML desde GitHub
-curl -sSL "$github_html_url" -o templates/index.html
+# Clonar el repositorio desde GitHub
+git clone https://github.com/LuisBastiasCH/workshop.git
+cd workshop  # Entrar al directorio clonado
 
 # Modificar el archivo HTML usando sed
 sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
