@@ -19,10 +19,6 @@ sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
 
 echo "Archivo HTML modificado exitosamente"
 
-# Configurar git
-git config --global user.email "luis.bastias@cloudhesive.com"
-git config --global user.name "LuisBastiasCH"
-
 # Añadir cambios, hacer commit y push
 git remote set-url origin https://github.com/LuisBastiasCH/workshop.git
 git add index.html
