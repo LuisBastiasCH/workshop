@@ -6,7 +6,13 @@ cd workshop  # Entrar al directorio clonado
 cd templates
 
 # Modificar el archivo HTML usando sed
-sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
+sed -i 's|<div id="container"><h2>Random GIF</h2>\
+        <img src="{{url}}" alt="Random GIF" />\
+        <h4>This app is running on:</h4>\
+        <p><strong>{{hostname}}</strong></p>\
+        <p>Author: Hermes Vargas</p>\
+        <p>Version: 1.0.0</p>\
+        <p><a href="/status">Check server status</a></p>\</div>|<div class="container">\
         <h2>Random GIF</h2>\
         <img src="{{url}}" alt="Random GIF" />\
         <h4>This app is running on:</h4>\
