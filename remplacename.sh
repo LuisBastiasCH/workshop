@@ -11,7 +11,7 @@ sed -i 's/<div id=""container"">Contenido anterior<\/div>/<div class="container"
         <h4>This app is running on:</h4>
         <p><strong>{{hostname}}</strong></p>
         <p>Author: Hermes Vargas</p>
-        <p>Version: 1.0.0</p>
+        <p>Version: 2.0.0</p>
         <p><a href="/status">Check server status</a></p>
     </div>/' "$html_file"
 
