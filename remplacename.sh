@@ -14,7 +14,8 @@ sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
         <p>Author: Hermes Vargas</p>\
         <p>Version: 2.0.0</p>\
         <p><a href="/status">Check server status</a></p>\
-    </div>|'/index.html
+    </div>|' index.html
+
 
 echo "Archivo HTML modificado exitosamente"
 
