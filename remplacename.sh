@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL del archivo HTML en GitHub
-github_html_url="https://raw.githubusercontent.com/LuisBastiasCH/workshop/main/remplacename.sh"
+github_html_url="https://raw.githubusercontent.com/LuisBastiasCH/workshop/main/templates/index.html"
 
 # Descargar el archivo HTML desde GitHub
 curl -sSL "$github_html_url" -o index.html
@@ -24,6 +24,7 @@ git config --global user.email "luis.bastias@cloudhesive.com"
 git config --global user.name "Luis Bastias"
 
 # Añadir cambios, hacer commit y push
+git remote add origin https://github.com/LuisBastiasCH/workshop.git
 git add index.html
 git commit -m "Modificación automática del archivo HTML"
 git push origin master
