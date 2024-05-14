@@ -27,4 +27,4 @@ git config --global user.name "Luis Bastias"
 git remote set-url origin https://github.com/LuisBastiasCH/workshop.git
 git add index.html
 git commit -m "Modificación automática del archivo HTML"
-git push origin master
+git push origin main
