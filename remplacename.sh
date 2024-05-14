@@ -7,14 +7,14 @@ github_html_url="https://raw.githubusercontent.com/LuisBastiasCH/workshop/main/t
 curl -sSL "$github_html_url" -o index.html
 
 # Modificar el archivo HTML usando sed
-sed 's|<div id="container">Contenido anterior</div>|<div class="container">
-        <h2>Random GIF</h2>
-        <img src="{{url}}" alt="Random GIF" />
-        <h4>This app is running on:</h4>
-        <p><strong>{{hostname}}</strong></p>
-        <p>Author: Hermes Vargas</p>
-        <p>Version: 2.0.0</p>
-        <p><a href="/status">Check server status</a></p>
+sed -i 's|<div id="container">Contenido anterior</div>|<div class="container">\
+        <h2>Random GIF</h2>\
+        <img src="{{url}}" alt="Random GIF" />\
+        <h4>This app is running on:</h4>\
+        <p><strong>{{hostname}}</strong></p>\
+        <p>Author: Hermes Vargas</p>\
+        <p>Version: 2.0.0</p>\
+        <p><a href="/status">Check server status</a></p>\
     </div>|' index.html
 
 echo "Archivo HTML modificado exitosamente"
@@ -24,7 +24,7 @@ git config --global user.email "luis.bastias@cloudhesive.com"
 git config --global user.name "Luis Bastias"
 
 # Añadir cambios, hacer commit y push
-git remote add origin https://github.com/LuisBastiasCH/workshop.git
+git remote set-url origin https://github.com/LuisBastiasCH/workshop.git
 git add index.html
 git commit -m "Modificación automática del archivo HTML"
 git push origin master
