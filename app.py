@@ -37,7 +37,7 @@ def status():
 
 @app.route('/version')
 def version():
-    return jsonify(version="3.0")
+    return jsonify(version="4.0")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8082)
